@@ -1,0 +1,31 @@
+PODS:
+  - HDAugmentedReality (1.0.1)
+  - IBMMobileFirstPlatformFoundation (8.0.2016070718)
+  - IBMMobileFirstPlatformFoundationLiveUpdate (8.0.2016070421):
+    - IBMMobileFirstPlatformFoundation (~> 8.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - HDAugmentedReality (from `https://github.com/DanijelHuis/HDAugmentedReality.git`)
+  - IBMMobileFirstPlatformFoundation
+  - IBMMobileFirstPlatformFoundationLiveUpdate
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  HDAugmentedReality:
+    :git: https://github.com/DanijelHuis/HDAugmentedReality.git
+
+CHECKOUT OPTIONS:
+  HDAugmentedReality:
+    :commit: 06fc2093160284e3a7b6c3c6585547dc6214340c
+    :git: https://github.com/DanijelHuis/HDAugmentedReality.git
+
+SPEC CHECKSUMS:
+  HDAugmentedReality: aa514e9cebb52e16c8d29170830f098a094fd2b7
+  IBMMobileFirstPlatformFoundation: adfc8b080dcb484bc49d37a97863b706f0fb31cb
+  IBMMobileFirstPlatformFoundationLiveUpdate: 709bb176afab9634bb478afab22f303999d27986
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 179addeb169a6a2668037b4b433f10c8c7828862
+
+COCOAPODS: 1.0.1

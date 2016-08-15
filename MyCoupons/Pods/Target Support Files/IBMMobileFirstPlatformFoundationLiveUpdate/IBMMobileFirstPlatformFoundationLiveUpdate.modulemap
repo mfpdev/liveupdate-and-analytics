@@ -1,0 +1,6 @@
+framework module IBMMobileFirstPlatformFoundationLiveUpdate {
+  umbrella header "IBMMobileFirstPlatformFoundationLiveUpdate-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3A77A1C84732FAFE7D5889F /* Pods_MyCoupons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */; };
+		D408125A1D60599500CC0D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40812591D60599500CC0D11 /* AppDelegate.swift */; };
+		D408125C1D60599500CC0D11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408125B1D60599500CC0D11 /* ViewController.swift */; };
+		D408125F1D60599500CC0D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D408125D1D60599500CC0D11 /* Main.storyboard */; };
+		D40812611D60599500CC0D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40812601D60599500CC0D11 /* Assets.xcassets */; };
+		D40812641D60599500CC0D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40812621D60599500CC0D11 /* LaunchScreen.storyboard */; };
+		D408126C1D6062CA00CC0D11 /* CouponAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */; };
+		D408126E1D6063B900CC0D11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D408126D1D6063B900CC0D11 /* MapKit.framework */; };
+		D40812701D6063DA00CC0D11 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D408126F1D6063DA00CC0D11 /* CoreLocation.framework */; };
+		D40812721D6063F100CC0D11 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40812711D6063F100CC0D11 /* CoreMotion.framework */; };
+		D4534FD21D619D36003153A7 /* CouponARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */; };
+		D4534FD41D61A5B9003153A7 /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4534FD31D61A5B9003153A7 /* mfpclient.plist */; };
+		D4534FD61D61FCFF003153A7 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D4534FD51D61FCFF003153A7 /* check.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCoupons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40812561D60599500CC0D11 /* MyCoupons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoupons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40812591D60599500CC0D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D408125B1D60599500CC0D11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D408125E1D60599500CC0D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D40812601D60599500CC0D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D40812631D60599500CC0D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D40812651D60599500CC0D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponAnnotationView.swift; sourceTree = "<group>"; };
+		D408126D1D6063B900CC0D11 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D408126F1D6063DA00CC0D11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D40812711D6063F100CC0D11 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponARAnnotation.swift; sourceTree = "<group>"; };
+		D4534FD31D61A5B9003153A7 /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
+		D4534FD51D61FCFF003153A7 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.release.xcconfig"; sourceTree = "<group>"; };
+		F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D40812531D60599500CC0D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40812721D6063F100CC0D11 /* CoreMotion.framework in Frameworks */,
+				D40812701D6063DA00CC0D11 /* CoreLocation.framework in Frameworks */,
+				D408126E1D6063B900CC0D11 /* MapKit.framework in Frameworks */,
+				A3A77A1C84732FAFE7D5889F /* Pods_MyCoupons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DCF3B555EE54F2BED207BA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */,
+				EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75A26039B59850013A52674C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D40812711D6063F100CC0D11 /* CoreMotion.framework */,
+				D408126F1D6063DA00CC0D11 /* CoreLocation.framework */,
+				D408126D1D6063B900CC0D11 /* MapKit.framework */,
+				367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D408124D1D60599500CC0D11 = {
+			isa = PBXGroup;
+			children = (
+				D4534FD31D61A5B9003153A7 /* mfpclient.plist */,
+				D40812581D60599500CC0D11 /* MyCoupons */,
+				D40812571D60599500CC0D11 /* Products */,
+				6DCF3B555EE54F2BED207BA0 /* Pods */,
+				75A26039B59850013A52674C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D40812571D60599500CC0D11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D40812561D60599500CC0D11 /* MyCoupons.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D40812581D60599500CC0D11 /* MyCoupons */ = {
+			isa = PBXGroup;
+			children = (
+				D4534FD51D61FCFF003153A7 /* check.png */,
+				D40812591D60599500CC0D11 /* AppDelegate.swift */,
+				D408125B1D60599500CC0D11 /* ViewController.swift */,
+				D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */,
+				D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */,
+				D408125D1D60599500CC0D11 /* Main.storyboard */,
+				D40812601D60599500CC0D11 /* Assets.xcassets */,
+				D40812621D60599500CC0D11 /* LaunchScreen.storyboard */,
+				D40812651D60599500CC0D11 /* Info.plist */,
+			);
+			path = MyCoupons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D40812551D60599500CC0D11 /* MyCoupons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40812681D60599500CC0D11 /* Build configuration list for PBXNativeTarget "MyCoupons" */;
+			buildPhases = (
+				990B06DC15918BD31A907F24 /* [CP] Check Pods Manifest.lock */,
+				D40812521D60599500CC0D11 /* Sources */,
+				D40812531D60599500CC0D11 /* Frameworks */,
+				D40812541D60599500CC0D11 /* Resources */,
+				143D28DACC4566CEBCE98CC7 /* [CP] Embed Pods Frameworks */,
+				1DF36A343DBD98C10C5C6B41 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCoupons;
+			productName = MyCoupons;
+			productReference = D40812561D60599500CC0D11 /* MyCoupons.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D408124E1D60599500CC0D11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					D40812551D60599500CC0D11 = {
+						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D40812511D60599500CC0D11 /* Build configuration list for PBXProject "MyCoupons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D408124D1D60599500CC0D11;
+			productRefGroup = D40812571D60599500CC0D11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D40812551D60599500CC0D11 /* MyCoupons */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D40812541D60599500CC0D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40812641D60599500CC0D11 /* LaunchScreen.storyboard in Resources */,
+				D4534FD61D61FCFF003153A7 /* check.png in Resources */,
+				D40812611D60599500CC0D11 /* Assets.xcassets in Resources */,
+				D4534FD41D61A5B9003153A7 /* mfpclient.plist in Resources */,
+				D408125F1D60599500CC0D11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		143D28DACC4566CEBCE98CC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DF36A343DBD98C10C5C6B41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		990B06DC15918BD31A907F24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D40812521D60599500CC0D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D408125C1D60599500CC0D11 /* ViewController.swift in Sources */,
+				D408126C1D6062CA00CC0D11 /* CouponAnnotationView.swift in Sources */,
+				D408125A1D60599500CC0D11 /* AppDelegate.swift in Sources */,
+				D4534FD21D619D36003153A7 /* CouponARAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D408125D1D60599500CC0D11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D408125E1D60599500CC0D11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D40812621D60599500CC0D11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D40812631D60599500CC0D11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D40812661D60599500CC0D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D40812671D60599500CC0D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D40812691D60599500CC0D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCoupons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D408126A1D60599500CC0D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCoupons/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D40812511D60599500CC0D11 /* Build configuration list for PBXProject "MyCoupons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40812661D60599500CC0D11 /* Debug */,
+				D40812671D60599500CC0D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40812681D60599500CC0D11 /* Build configuration list for PBXNativeTarget "MyCoupons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40812691D60599500CC0D11 /* Debug */,
+				D408126A1D60599500CC0D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D408124E1D60599500CC0D11 /* Project object */;
+}

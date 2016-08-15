@@ -1,0 +1,10 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MyCoupons' do
+  use_frameworks!
+   pod 'IBMMobileFirstPlatformFoundation'
+   pod 'IBMMobileFirstPlatformFoundationLiveUpdate'
+   pod 'SwiftyJSON'
+   pod 'HDAugmentedReality', :git => 'https://github.com/DanijelHuis/HDAugmentedReality.git'
+end
