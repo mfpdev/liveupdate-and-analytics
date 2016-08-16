@@ -48,26 +48,30 @@ public class CouponsResource {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
     @Path("{segment}")
+    @OAuthSecurity (scope = "club-member-scope")
 	public Coupon [] getCoupons(@PathParam("segment") String segment) {
         Coupon [] coupons = new Coupon[0];
         JSONArray json = new JSONArray();
 	    if (segment.equals("regular")) {
             coupons = new Coupon[]{
-                    new Coupon ("20%","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/twenty-percent-off-1424812_960_720.png","32.249196:34.841903"),
-                    new Coupon ("35%","https://pixabay.com/static/uploads/photo/2016/05/30/14/20/thirty-five-percent-off-1424826_960_720.png","32.225630:34.841251"),
-                    new Coupon ("40%","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.216586:34.822409")
+                    new Coupon ("regular", "20% Coupon","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/twenty-percent-off-1424812_960_720.png","32.249196:34.841903", Coupon.CouponType.DISCOUNT),
+                    new Coupon ("regular", "35% Coupon","https://pixabay.com/static/uploads/photo/2016/05/30/14/20/thirty-five-percent-off-1424826_960_720.png","32.225630:34.841251",Coupon.CouponType.DISCOUNT),
+                    new Coupon ("regular", "40% Coupon","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.216586:34.822409",Coupon.CouponType.DISCOUNT),
+                    new Coupon ("regular", "$3 Gift Card","https://pixabay.com/static/uploads/photo/2015/08/11/08/31/coupon-883647_960_720.jpg","32.317815:34.858460",Coupon.CouponType.DISCOUNT)
             };
 		} else if (segment.equals("premium")){
             coupons = new Coupon[]{
-                    new Coupon ("20%","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/twenty-percent-off-1424812_960_720.png","32.216586:34.822409"),
-                    new Coupon ("35%","https://pixabay.com/static/uploads/photo/2016/05/30/14/20/thirty-five-percent-off-1424826_960_720.png","32.216586:34.822409"),
-                    new Coupon ("40%","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.216586:34.822409")
+                    new Coupon ("premium", "30% Coupon","https://pixabay.com/static/uploads/photo/2015/10/31/12/21/discount-1015446_960_720.jpg","32.162413:34.844675",Coupon.CouponType.DISCOUNT),
+                    new Coupon ("premium", "30% Coupon","https://pixabay.com/static/uploads/photo/2015/10/31/12/21/discount-1015446_960_720.jpg","32.321458:34.853196",Coupon.CouponType.DISCOUNT),
+                    new Coupon ("premium", "40% Coupon","https://pixabay.com/static/uploads/photo/2015/10/31/12/21/discount-1015445_960_720.jpg","32.216586:34.822409",Coupon.CouponType.DISCOUNT),
+                    new Coupon ("premium", "OnePlusOne","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.228477:34.824411",Coupon.CouponType.GIFT),
+                    new Coupon ("premium", "$5 Gift Card","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.321458:34.853196",Coupon.CouponType.GIFT)
             };
 		} else if (segment.equals("vip")){
 			coupons = new Coupon[]{
-			        new Coupon ("20%","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/twenty-percent-off-1424812_960_720.png","32.216586:34.822409"),
-                    new Coupon ("35%","https://pixabay.com/static/uploads/photo/2016/05/30/14/20/thirty-five-percent-off-1424826_960_720.png","32.216586:34.822409"),
-                    new Coupon ("40%","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.216586:34.822409")
+                    new Coupon ("vip", "60% Coupon","https://pixabay.com/static/uploads/photo/2016/02/01/09/30/sixty-1173253_960_720.jpg","32.216586:34.822409", Coupon.CouponType.DISCOUNT),
+                    new Coupon ("vip", "$10 Gift card","https://pixabay.com/static/uploads/photo/2015/08/11/08/21/coupon-883638_960_720.png","32.228477:34.824411",Coupon.CouponType.GIFT),
+                    new Coupon ("vip", "New iPhone Gift!!!","https://pixabay.com/static/uploads/photo/2014/09/23/21/22/iphone-6-458155_960_720.jpg","32.220675:34.819579", Coupon.CouponType.GIFT)
             };
 		}
 		return coupons;

@@ -13,14 +13,22 @@ import IBMMobileFirstPlatformFoundationLiveUpdate
 import IBMMobileFirstPlatformFoundation
 import SwiftyJSON
 
-class ViewController: UIViewController, ARDataSource{
+class CouponViewController: UIViewController, ARDataSource{
 
     var couponsAnnotations : [CouponARAnnotation]? = []
-    var enabledRadius : Int?
+    var discountPickableRadius : Int?
+    var giftPickableRadius : Int?
     
+    @IBOutlet weak var lookForCouponsFeature: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        LiveUpdateManager.sharedInstance.obtainConfiguration([:]) { (configuration, error) in
+            if let couponeIsEnable = configuration?.isFeatureEnabled("ar_coupon"){
+                self.lookForCouponsFeature.hidden = !couponeIsEnable
+                
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,18 +59,17 @@ class ViewController: UIViewController, ARDataSource{
         self.presentViewController(arViewController, animated: true, completion: nil)
     }
     
+    
     @IBAction func getMyCoupons(sender: AnyObject) {
-        LiveUpdateManager.sharedInstance.obtainConfiguration("regular") { (configuration, error) in
-            if let couponeIsEnable = configuration?.isFeatureEnabled("ar_coupon"){
-                if (couponeIsEnable) {
-                    if let coupons_adapter_url = configuration?.getProperty("coupons_adapter_url"), let enabledRadius = configuration?.getProperty("enabledRadius") {
-                        self.enabledRadius = Int(enabledRadius)
-                        self.fertchCoupons(coupons_adapter_url)
-                    }
-                }
+        LiveUpdateManager.sharedInstance.obtainConfiguration([:]) { (configuration, error) in
+            if let coupons_adapter_url = configuration?.getProperty("coupons_adapter_url"), let discountPickableRadius = configuration?.getProperty("discountPickableRadius"), let giftPickableRadius = configuration?.getProperty("giftPickableRadius"){
+                self.discountPickableRadius = Int(discountPickableRadius)
+                self.giftPickableRadius = Int(giftPickableRadius)
+                self.fertchCoupons(coupons_adapter_url)
             }
         }
     }
+
     
     private func fertchCoupons (coupons_adapter_url:String) {
         couponsAnnotations?.removeAll()
@@ -81,14 +88,17 @@ class ViewController: UIViewController, ARDataSource{
     private func appendCouponsFromResponse (data : NSData) {
         let coupons = JSON(data: data)
         for (_,couponJSON):(String, JSON) in coupons {
-            self.couponsAnnotations?.append(CouponARAnnotation(imageURL: couponJSON["imageURL"].string!, title: couponJSON["title"].string!, location: couponJSON["location"].string!, enabledRadius: self.enabledRadius!))
+            let couponType = couponJSON["couponType"].string!
+            let enableRadius = couponType == "DISCOUNT" ? self.discountPickableRadius : self.giftPickableRadius;
+            
+            self.couponsAnnotations?.append(CouponARAnnotation(imageURL: couponJSON["imageURL"].string!, title: couponJSON["title"].string!, location: couponJSON["location"].string!, enabledRadius: enableRadius!, couponType: couponType, segment: couponJSON["couponSegment"].string!))
         }
     }
     
     /// This method is called by ARViewController, make sure to set dataSource property.
     func ar(arViewController: ARViewController, viewForAnnotation: ARAnnotation) -> ARAnnotationView {
         let annotationView = CouponAnnotationView()
-        annotationView.frame = CGRect(x: 0,y: 0,width: 100000 / viewForAnnotation.distanceFromUser,height: 100000 / viewForAnnotation.distanceFromUser)
+        annotationView.frame = CGRect(x: 0,y: 0,width: 200, height: 200)
         return annotationView;
     }
 }

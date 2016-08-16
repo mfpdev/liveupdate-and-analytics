@@ -23,14 +23,10 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="ClubMemberTypeSegmentResolver" />
-        <module name="coupons" />
-        <module name="UserLogin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ClubMemberTypeSegmentResolver" target="1.5" />
-      <module name="coupons" target="1.5" />
-      <module name="UserLogin" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

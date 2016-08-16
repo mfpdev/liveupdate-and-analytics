@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Coupon-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyCoupons" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Coupon" customClass="CouponViewController" customModule="MyCoupons" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,33 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQw-Gh-pfl">
-                                <rect key="frame" x="30" y="267" width="540" height="66"/>
-                                <color key="backgroundColor" red="0.43137254899999999" green="0.73333333329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MlB-kD-19P">
+                                <rect key="frame" x="20" y="530" width="560" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9a-3Y-7XI">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="50"/>
+                                        <color key="backgroundColor" red="0.4313725531" green="0.73333334920000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Browse Products">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckn-IF-gLq">
+                                        <rect key="frame" x="560" y="0.0" width="0.0" height="50"/>
+                                        <color key="backgroundColor" red="0.4313725531" green="0.73333334920000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Look for coupons">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getMyCoupons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eof-X5-3Ll"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="fbP-Sl-JGr"/>
+                                    <constraint firstAttribute="height" constant="50" id="2Wh-fN-0qn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Pick coupons">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                    <color key="titleShadowColor" red="0.43137254899999999" green="0.73333333329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="getMyCoupons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xr-zg-VgN"/>
-                                </connections>
-                            </button>
+                                <variation key="heightClass=compact" distribution="fillProportionally"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aQw-Gh-pfl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2A4-cH-wzN"/>
-                            <constraint firstItem="aQw-Gh-pfl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7cG-6i-PqI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aQw-Gh-pfl" secondAttribute="trailing" constant="10" id="Vfz-sK-A7a"/>
-                            <constraint firstItem="aQw-Gh-pfl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="W3B-Z4-Uz9"/>
+                            <constraint firstItem="MlB-kD-19P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Eia-T5-IuZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MlB-kD-19P" secondAttribute="bottom" constant="20" id="FqX-oe-sPc"/>
+                            <constraint firstItem="MlB-kD-19P" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Me3-iV-CH4"/>
+                            <constraint firstItem="MlB-kD-19P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="470" id="dij-hd-a5N"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dij-hd-a5N"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="ddddd" id="WqE-im-f5W" userLabel="Coupon"/>
+                    <connections>
+                        <outlet property="lookForCouponsFeature" destination="Ckn-IF-gLq" id="9c5-3L-Rr4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="668" y="138"/>
         </scene>
     </scenes>
 </document>

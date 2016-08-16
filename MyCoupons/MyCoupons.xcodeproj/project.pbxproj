@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A3A77A1C84732FAFE7D5889F /* Pods_MyCoupons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */; };
 		D408125A1D60599500CC0D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40812591D60599500CC0D11 /* AppDelegate.swift */; };
-		D408125C1D60599500CC0D11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408125B1D60599500CC0D11 /* ViewController.swift */; };
+		D408125C1D60599500CC0D11 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408125B1D60599500CC0D11 /* CouponViewController.swift */; };
 		D408125F1D60599500CC0D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D408125D1D60599500CC0D11 /* Main.storyboard */; };
 		D40812611D60599500CC0D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40812601D60599500CC0D11 /* Assets.xcassets */; };
 		D40812641D60599500CC0D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40812621D60599500CC0D11 /* LaunchScreen.storyboard */; };
@@ -20,13 +20,14 @@
 		D4534FD21D619D36003153A7 /* CouponARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */; };
 		D4534FD41D61A5B9003153A7 /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4534FD31D61A5B9003153A7 /* mfpclient.plist */; };
 		D4534FD61D61FCFF003153A7 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D4534FD51D61FCFF003153A7 /* check.png */; };
+		D4534FD81D62D940003153A7 /* UserLoginChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4534FD71D62D940003153A7 /* UserLoginChallengeHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCoupons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40812561D60599500CC0D11 /* MyCoupons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoupons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40812591D60599500CC0D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D408125B1D60599500CC0D11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D408125B1D60599500CC0D11 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		D408125E1D60599500CC0D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D40812601D60599500CC0D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40812631D60599500CC0D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponARAnnotation.swift; sourceTree = "<group>"; };
 		D4534FD31D61A5B9003153A7 /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
 		D4534FD51D61FCFF003153A7 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		D4534FD71D62D940003153A7 /* UserLoginChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginChallengeHandler.swift; sourceTree = "<group>"; };
 		EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.release.xcconfig"; sourceTree = "<group>"; };
 		F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,9 +103,10 @@
 			children = (
 				D4534FD51D61FCFF003153A7 /* check.png */,
 				D40812591D60599500CC0D11 /* AppDelegate.swift */,
-				D408125B1D60599500CC0D11 /* ViewController.swift */,
-				D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */,
+				D408125B1D60599500CC0D11 /* CouponViewController.swift */,
 				D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */,
+				D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */,
+				D4534FD71D62D940003153A7 /* UserLoginChallengeHandler.swift */,
 				D408125D1D60599500CC0D11 /* Main.storyboard */,
 				D40812601D60599500CC0D11 /* Assets.xcassets */,
 				D40812621D60599500CC0D11 /* LaunchScreen.storyboard */,
@@ -241,8 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D408125C1D60599500CC0D11 /* ViewController.swift in Sources */,
+				D408125C1D60599500CC0D11 /* CouponViewController.swift in Sources */,
 				D408126C1D6062CA00CC0D11 /* CouponAnnotationView.swift in Sources */,
+				D4534FD81D62D940003153A7 /* UserLoginChallengeHandler.swift in Sources */,
 				D408125A1D60599500CC0D11 /* AppDelegate.swift in Sources */,
 				D4534FD21D619D36003153A7 /* CouponARAnnotation.swift in Sources */,
 			);
@@ -359,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCoupons/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,7 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCoupons/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
