@@ -60,7 +60,7 @@ public class CouponAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
     
     func layoutUi() {
         let calculatedSize = CGFloat(200000 / (self.annotation as! CouponARAnnotation).distanceFromUser)
-        let size: CGFloat = calculatedSize < 50 ? 50 : calculatedSize > 200 ? 200 : calculatedSize
+        let size: CGFloat = calculatedSize < 80 ? 80 : calculatedSize > 250 ? 250 : calculatedSize
         self.couponImageView?.frame = CGRectMake(20, 20, size, size)
         self.titleLabel?.frame = CGRectMake(0, 0, self.frame.size.width, 17);
     }
@@ -71,7 +71,7 @@ public class CouponAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
             let distance = annotation.distanceFromUser > 1000 ? String(format: "%.1fkm", annotation.distanceFromUser / 1000) : String(format:"%.0fm", annotation.distanceFromUser)
             self.titleLabel?.text = distance
             print (distance)
-       }
+        }
     }
     
     public override func layoutSubviews() {
@@ -92,6 +92,6 @@ public class CouponAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
             WLAnalytics.sharedInstance().log("coupon-not-picked", withMetadata: annotation.asMetaData());
             WLAnalytics.sharedInstance().send();
         }
-     
+        
     }
 }

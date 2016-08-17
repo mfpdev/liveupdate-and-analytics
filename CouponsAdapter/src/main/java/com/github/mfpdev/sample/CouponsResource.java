@@ -37,11 +37,14 @@ import com.ibm.mfp.adapter.api.OAuthSecurity;
 @Api(value = "Sample Adapter Resource")
 @Path("/")
 public class CouponsResource {
+    private static final String REGULAR = "regular";
+    private static final String PREMIUM = "premium";
+    private static final String VIP = "vip";
 
-    static Logger logger = Logger.getLogger(CouponsResource.class.getName());
+    private final static String BASE_URL = "https://raw.githubusercontent.com/mfpdev/images/master/";
 
-	@Context
-	ConfigurationAPI configApi;
+    private final static double STORE_LATITUDE = 32.090041;
+    private final static double STORE_LONGITUDE =  34.883931;
 
 	@ApiOperation(value = "Returns coupons for requested segment (e.g. regular/premium/vip)", notes = "Fake of a resource returning coupons list from the enterprise marketing systems")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Hello message returned") })
@@ -51,29 +54,51 @@ public class CouponsResource {
     @OAuthSecurity (scope = "club-member-scope")
 	public Coupon [] getCoupons(@PathParam("segment") String segment) {
         Coupon [] coupons = new Coupon[0];
-        JSONArray json = new JSONArray();
-	    if (segment.equals("regular")) {
+	    if (segment.equals(REGULAR)) {
             coupons = new Coupon[]{
-                    new Coupon ("regular", "20% Coupon","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/twenty-percent-off-1424812_960_720.png","32.249196:34.841903", Coupon.CouponType.DISCOUNT),
-                    new Coupon ("regular", "35% Coupon","https://pixabay.com/static/uploads/photo/2016/05/30/14/20/thirty-five-percent-off-1424826_960_720.png","32.225630:34.841251",Coupon.CouponType.DISCOUNT),
-                    new Coupon ("regular", "40% Coupon","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.216586:34.822409",Coupon.CouponType.DISCOUNT),
-                    new Coupon ("regular", "$3 Gift Card","https://pixabay.com/static/uploads/photo/2015/08/11/08/31/coupon-883647_960_720.jpg","32.317815:34.858460",Coupon.CouponType.DISCOUNT)
+                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 5, Coupon.CouponType.GIFT)
             };
-		} else if (segment.equals("premium")){
+		} else if (segment.equals(PREMIUM)){
             coupons = new Coupon[]{
-                    new Coupon ("premium", "30% Coupon","https://pixabay.com/static/uploads/photo/2015/10/31/12/21/discount-1015446_960_720.jpg","32.162413:34.844675",Coupon.CouponType.DISCOUNT),
-                    new Coupon ("premium", "30% Coupon","https://pixabay.com/static/uploads/photo/2015/10/31/12/21/discount-1015446_960_720.jpg","32.321458:34.853196",Coupon.CouponType.DISCOUNT),
-                    new Coupon ("premium", "40% Coupon","https://pixabay.com/static/uploads/photo/2015/10/31/12/21/discount-1015445_960_720.jpg","32.216586:34.822409",Coupon.CouponType.DISCOUNT),
-                    new Coupon ("premium", "OnePlusOne","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.228477:34.824411",Coupon.CouponType.GIFT),
-                    new Coupon ("premium", "$5 Gift Card","https://pixabay.com/static/uploads/photo/2016/05/30/14/13/forty-percent-off-1424816_960_720.png","32.321458:34.853196",Coupon.CouponType.GIFT)
+                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 5, Coupon.CouponType.GIFT),
+                    getCoupon (VIP, 5, Coupon.CouponType.GIFT)
             };
-		} else if (segment.equals("vip")){
+		} else if (segment.equals(VIP)){
 			coupons = new Coupon[]{
-                    new Coupon ("vip", "60% Coupon","https://pixabay.com/static/uploads/photo/2016/02/01/09/30/sixty-1173253_960_720.jpg","32.216586:34.822409", Coupon.CouponType.DISCOUNT),
-                    new Coupon ("vip", "$10 Gift card","https://pixabay.com/static/uploads/photo/2015/08/11/08/21/coupon-883638_960_720.png","32.228477:34.824411",Coupon.CouponType.GIFT),
-                    new Coupon ("vip", "New iPhone Gift!!!","https://pixabay.com/static/uploads/photo/2014/09/23/21/22/iphone-6-458155_960_720.jpg","32.220675:34.819579", Coupon.CouponType.GIFT)
+                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 70, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 70, Coupon.CouponType.DISCOUNT),
+                    getCoupon (VIP, 5, Coupon.CouponType.GIFT),
+                    getCoupon (VIP, 5, Coupon.CouponType.GIFT),
+                    getCoupon (VIP, 10, Coupon.CouponType.GIFT),
+                    getCoupon (VIP, 10, Coupon.CouponType.GIFT),
+                    getCoupon (VIP, 10, Coupon.CouponType.GIFT)
             };
 		}
 		return coupons;
 	}
+
+	private String getRandomLocationNearStore () {
+        double lat = Math.random() / 100;
+        double lon = Math.random() / 100;
+        return (STORE_LATITUDE + lat) + ":" + (STORE_LONGITUDE + lon);
+    }
+
+    private Coupon getCoupon (String memberType, int sum, Coupon.CouponType couponType) {
+        String title = couponType == Coupon.CouponType.DISCOUNT ? sum + "% Discount" : "$" + sum + " Gift";
+        String imageUrl = BASE_URL + sum + (couponType == Coupon.CouponType.DISCOUNT ? "-discount.png" : "-gift.png");
+        return new Coupon(memberType, title, imageUrl , getRandomLocationNearStore (), couponType);
+    }
 }

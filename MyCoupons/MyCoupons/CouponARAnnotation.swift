@@ -36,7 +36,7 @@ class CouponARAnnotation: ARAnnotation {
         return ["imageURL" : imageURL!,
                 "enabledRadius" : enabledRadius!,
                 "couponType" :couponType!,
-                "isPicked" : isPicked,
+                "isPicked" : isPicked ? "true" : "false",
                 "couponSegment" : couponSegment!,
                 "title" : title!,
                 "location" : locationString!,

@@ -29,6 +29,7 @@ public class UserLogin extends UserAuthenticationSecurityCheck {
     @Override
     protected AuthenticatedUser createUser() {
         return new AuthenticatedUser(userId, displayName, this.getName());
+
     }
 
     @Override

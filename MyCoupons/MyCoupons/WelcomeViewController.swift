@@ -13,26 +13,58 @@ import IBMMobileFirstPlatformFoundationLiveUpdate
 import IBMMobileFirstPlatformFoundation
 import SwiftyJSON
 
-class CouponViewController: UIViewController, ARDataSource{
-
+class WelcomeViewController: UIViewController, ARDataSource{
+    
+    @IBOutlet weak var welcomeTitle: UILabel!
+    @IBOutlet weak var welcomeImage: UIImageView!
     var couponsAnnotations : [CouponARAnnotation]? = []
+    
     var discountPickableRadius : Int?
     var giftPickableRadius : Int?
     
     @IBOutlet weak var lookForCouponsFeature: UIButton!
     
+    func startCouponsAnimation () {
+        var imageArray = Array<UIImage>()
+        for index in 0...5{
+            let imageName = "store_" + String(index) + ".png"
+            imageArray.append(UIImage(named: imageName)!)
+        }
+        self.welcomeImage.animationImages = imageArray
+        self.welcomeImage.animationDuration = 3
+        self.welcomeImage.animationRepeatCount = 1
+        self.welcomeImage.startAnimating()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController!.navigationBar.hidden = true;
+        loadWelcomeSettings()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        LiveUpdateManager.sharedInstance.obtainConfiguration([:]) { (configuration, error) in
-            if let couponeIsEnable = configuration?.isFeatureEnabled("ar_coupon"){
-                self.lookForCouponsFeature.hidden = !couponeIsEnable
-                
-            }
-        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    private func loadWelcomeSettings () {
+        LiveUpdateManager.sharedInstance.obtainConfiguration([:]) { (configuration, error) in
+            if let couponeIsEnable = configuration?.isFeatureEnabled("ar_coupon"){
+                self.lookForCouponsFeature.hidden = !couponeIsEnable
+                self.welcomeTitle.text = "Welcome " + NSUserDefaults.standardUserDefaults().stringForKey("displayName")!
+                if (couponeIsEnable) {
+                    if let welcomeMessage = configuration?.getProperty("welcomeMessage") {
+                        self.welcomeTitle.text = self.welcomeTitle.text! + ", \n" + welcomeMessage
+                    }
+                    self.welcomeImage.image = UIImage(named:"store_5.png")
+                    self.startCouponsAnimation()
+                } else {
+                    self.welcomeImage.image = UIImage(named:"store_0.png")
+                }
+            }
+        }
     }
     
     func showCoupons () {
@@ -53,7 +85,7 @@ class CouponViewController: UIViewController, ARDataSource{
         arViewController.maxVisibleAnnotations = 100
         arViewController.maxVerticalLevel = 5
         arViewController.headingSmoothingFactor = 0.05
-        arViewController.trackingManager.userDistanceFilter = 25
+        arViewController.trackingManager.userDistanceFilter = 100
         arViewController.trackingManager.reloadDistanceFilter = 75
         arViewController.setAnnotations(couponsAnnotations!)
         self.presentViewController(arViewController, animated: true, completion: nil)
@@ -69,7 +101,7 @@ class CouponViewController: UIViewController, ARDataSource{
             }
         }
     }
-
+    
     
     private func fertchCoupons (coupons_adapter_url:String) {
         couponsAnnotations?.removeAll()
