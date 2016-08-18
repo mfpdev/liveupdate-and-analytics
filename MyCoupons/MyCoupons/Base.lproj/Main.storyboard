@@ -58,7 +58,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-vc-jA3">
-                                <rect key="frame" x="0.0" y="110" width="67" height="16"/>
+                                <rect key="frame" x="0.0" y="74" width="67" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="vbV-1r-ue8"/>
                                     <constraint firstAttribute="height" constant="16" id="wHR-hQ-h5y"/>
@@ -87,6 +87,7 @@
                             <constraint firstItem="MlB-kD-19P" firstAttribute="top" secondItem="EmT-IO-hqr" secondAttribute="bottom" constant="20" id="VBv-mv-w1l"/>
                             <constraint firstItem="lh7-mY-6wE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VI3-JQ-P6J"/>
                             <constraint firstItem="lh7-mY-6wE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WVl-Lo-1w5"/>
+                            <constraint firstItem="T0m-vc-jA3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="YyC-d0-MV7"/>
                             <constraint firstItem="T0m-vc-jA3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ZU8-IL-EVP"/>
                             <constraint firstItem="T0m-vc-jA3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="dTS-Pe-KdF"/>
                             <constraint firstItem="MlB-kD-19P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="470" id="dij-hd-a5N"/>
@@ -100,6 +101,7 @@
                                 <exclude reference="ZU8-IL-EVP"/>
                                 <exclude reference="dTS-Pe-KdF"/>
                                 <exclude reference="s8o-cA-MdM"/>
+                                <exclude reference="TBP-Yx-pPi"/>
                                 <exclude reference="dij-hd-a5N"/>
                             </mask>
                         </variation>
