@@ -23,4 +23,7 @@
 	<description>Coupons Adapter</description>
 
 	<JAXRSApplicationClass>com.github.mfpdev.sample.CouponsApplication</JAXRSApplicationClass>
+
+	<property name="LATITUDE" defaultValue=""/>
+	<property name="LONGITUDE" defaultValue=""/>
 </mfp:adapter>

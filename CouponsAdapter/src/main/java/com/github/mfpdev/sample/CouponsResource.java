@@ -51,8 +51,12 @@ public class CouponsResource {
 
     private final static String BASE_URL = "https://raw.githubusercontent.com/mfpdev/images/master/";
 
-    private final static double STORE_LATITUDE = 32.216586;
-    private final static double STORE_LONGITUDE =  34.822409;
+    @Context
+    ConfigurationAPI configurationAPI;
+
+
+    private static double STORE_LATITUDE = 32.216586;
+    private static double STORE_LONGITUDE =  34.822409;
 
 	@ApiOperation(value = "Returns coupons for requested segment (e.g. regular/premium/vip)", notes = "Fake of a resource returning coupons list from the enterprise marketing systems")
 	@ApiResponses(value = { @ApiResponse(code = 200, message = "Hello message returned") })
@@ -61,6 +65,13 @@ public class CouponsResource {
     @Path("{segment}")
     @OAuthSecurity (scope = "club-member-scope")
 	public Coupon [] getCoupons(@PathParam("segment") String segment) {
+        String lat = configurationAPI.getPropertyValue("LATITUDE");
+        String lon = configurationAPI.getPropertyValue("LONGITUDE");
+        if (!lat.isEmpty() && !lon.isEmpty()) {
+            STORE_LATITUDE = Double.valueOf(configurationAPI.getPropertyValue("LATITUDE"));
+            STORE_LONGITUDE = Double.valueOf(configurationAPI.getPropertyValue("LONGITUDE"));
+        }
+
         Coupon [] coupons = new Coupon[0];
 	    if (segment.equals(REGULAR)) {
             coupons = new Coupon[]{
