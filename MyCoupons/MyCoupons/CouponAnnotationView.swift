@@ -37,12 +37,7 @@ public class CouponAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
             self.loadUi()
         }
     }
-    
-    func getUIImage (urlString: String)->UIImage? {
-        let url = NSURL(string: urlString)
-        let imagedData = NSData(contentsOfURL: url!)!
-        return UIImage(data: imagedData, scale: 10)
-    }
+
     
     func loadUi() {
         self.titleLabel?.removeFromSuperview()
@@ -56,7 +51,7 @@ public class CouponAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
         
         self.couponImageView?.removeFromSuperview()
         let coupon : CouponARAnnotation = self.annotation as! CouponARAnnotation
-        let image = coupon.imageURL!.containsString("/") ? getUIImage(coupon.imageURL!) : UIImage(named: coupon.imageURL!)
+        let image = coupon.imageURL!.containsString("/") ? Utils.getUIImage(coupon.imageURL!) : UIImage(named: coupon.imageURL!)
         let imageView = UIImageView(image: image!)
         self.addSubview(imageView)
         self.couponImageView = imageView
@@ -110,6 +105,5 @@ public class CouponAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
             WLAnalytics.sharedInstance().log("coupon-not-picked", withMetadata: annotation.asMetaData());
             WLAnalytics.sharedInstance().send();
         }
-        
     }
 }

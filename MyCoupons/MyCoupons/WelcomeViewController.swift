@@ -32,25 +32,13 @@ class WelcomeViewController: UIViewController, ARDataSource{
     
     @IBOutlet weak var welcomeTitle: UILabel!
     @IBOutlet weak var welcomeImage: UIImageView!
-    var couponsAnnotations : [CouponARAnnotation]? = []
-    
-    var discountPickableRadius : Int?
-    var giftPickableRadius : Int?
-    
+    @IBOutlet weak var clubImage: UIImageView!
     @IBOutlet weak var lookForCouponsFeature: UIButton!
     
-    func startCouponsAnimation () {
-        var imageArray = Array<UIImage>()
-        for index in 0...5{
-            let imageName = "store_" + String(index) + ".png"
-            imageArray.append(UIImage(named: imageName)!)
-        }
-        self.welcomeImage.animationImages = imageArray
-        self.welcomeImage.animationDuration = 3
-        self.welcomeImage.animationRepeatCount = 1
-        self.welcomeImage.startAnimating()
-    }
-    
+    var discountPickableRadius : Int?
+    var couponsAnnotations : [CouponARAnnotation]? = []
+    var giftPickableRadius : Int?
+
     override func viewWillAppear(animated: Bool) {
         self.navigationController!.navigationBar.hidden = true;
         loadWelcomeSettings()
@@ -64,11 +52,26 @@ class WelcomeViewController: UIViewController, ARDataSource{
         super.didReceiveMemoryWarning()
     }
     
+    func startCouponsAnimation () {
+        var imageArray = Array<UIImage>()
+        for index in 0...5{
+            let imageName = "store_" + String(index) + ".png"
+            imageArray.append(UIImage(named: imageName)!)
+        }
+        self.welcomeImage.animationImages = imageArray
+        self.welcomeImage.animationDuration = 3
+        self.welcomeImage.animationRepeatCount = 1
+        self.welcomeImage.startAnimating()
+    }
+    
     private func loadWelcomeSettings () {
         LiveUpdateManager.sharedInstance.obtainConfiguration([:]) { (configuration, error) in
-            if let couponeIsEnable = configuration?.isFeatureEnabled("ar_coupon"){
+            if let couponeIsEnable = configuration?.isFeatureEnabled("ar_coupon") {
                 self.lookForCouponsFeature.hidden = !couponeIsEnable
                 self.welcomeTitle.text = "Welcome " + NSUserDefaults.standardUserDefaults().stringForKey("displayName")!
+                if let clubImage = configuration?.getProperty("clubImage") {
+                    self.clubImage.image = Utils.getUIImage(clubImage)!
+                }
                 if (couponeIsEnable) {
                     if let welcomeMessage = configuration?.getProperty("welcomeMessage") {
                         self.welcomeTitle.text = self.welcomeTitle.text! + ", \n" + welcomeMessage
@@ -111,7 +114,8 @@ class WelcomeViewController: UIViewController, ARDataSource{
         //Dummy action, only fetch token
         WLAuthorizationManager.sharedInstance().obtainAccessTokenForScope("club-member-scope") { (token, error) in
             if (token != nil) {
-                print (token)
+                print (token.value)
+                self.loadWelcomeSettings ()
             } else {
                 print (error)
             }
@@ -120,7 +124,7 @@ class WelcomeViewController: UIViewController, ARDataSource{
     
     @IBAction func getMyCoupons(sender: AnyObject) {
         LiveUpdateManager.sharedInstance.obtainConfiguration([:]) { (configuration, error) in
-            if let coupons_adapter_url = configuration?.getProperty("coupons_adapter_url"), let discountPickableRadius = configuration?.getProperty("discountPickableRadius"), let giftPickableRadius = configuration?.getProperty("giftPickableRadius"){
+            if let coupons_adapter_url = configuration?.getProperty("coupons_adapter_url"), let discountPickableRadius = configuration?.getProperty("discountPickableRadius"), let giftPickableRadius = configuration?.getProperty("giftPickableRadius") {
                 self.discountPickableRadius = Int(discountPickableRadius)
                 self.giftPickableRadius = Int(giftPickableRadius)
                 self.fertchCoupons(coupons_adapter_url)
