@@ -1,9 +1,24 @@
+/**
+ * Copyright 2016 IBM Corp.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 //
-//  ViewController.swift
+//  WelcomeViewController.swift
 //  MyCoupons
 //
 //  Created by Ishai Borovoy on 14/08/2016.
-//  Copyright © 2016 IBM. All rights reserved.
 //
 
 import UIKit
@@ -83,7 +98,7 @@ class WelcomeViewController: UIViewController, ARDataSource{
         arViewController.dataSource = self
         arViewController.maxDistance = 0
         arViewController.maxVisibleAnnotations = 100
-        arViewController.maxVerticalLevel = 5
+        arViewController.maxVerticalLevel = 3
         arViewController.headingSmoothingFactor = 0.05
         arViewController.trackingManager.userDistanceFilter = 100
         arViewController.trackingManager.reloadDistanceFilter = 75
@@ -91,6 +106,17 @@ class WelcomeViewController: UIViewController, ARDataSource{
         self.presentViewController(arViewController, animated: true, completion: nil)
     }
     
+    
+    @IBAction func browseProducts(sender: AnyObject) {
+        //Dummy action, only fetch token
+        WLAuthorizationManager.sharedInstance().obtainAccessTokenForScope("club-member-scope") { (token, error) in
+            if (token != nil) {
+                print (token)
+            } else {
+                print (error)
+            }
+        }
+    }
     
     @IBAction func getMyCoupons(sender: AnyObject) {
         LiveUpdateManager.sharedInstance.obtainConfiguration([:]) { (configuration, error) in
@@ -100,6 +126,8 @@ class WelcomeViewController: UIViewController, ARDataSource{
                 self.fertchCoupons(coupons_adapter_url)
             }
         }
+        WLAnalytics.sharedInstance().log("load-couons-pressed", withMetadata: ["load-couons-pressed":WLDeviceAuthManager.sharedInstance().getWLUniqueDeviceId()]);
+        WLAnalytics.sharedInstance().send();
     }
     
     

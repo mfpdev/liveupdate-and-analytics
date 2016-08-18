@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A3A77A1C84732FAFE7D5889F /* Pods_MyCoupons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */; };
+		D40190D31D659EFF00956BCD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40190D11D659EFF00956BCD /* CoreAudio.framework */; };
+		D40190D41D659EFF00956BCD /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40190D21D659EFF00956BCD /* CoreAudioKit.framework */; };
 		D408125A1D60599500CC0D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40812591D60599500CC0D11 /* AppDelegate.swift */; };
 		D408125C1D60599500CC0D11 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408125B1D60599500CC0D11 /* WelcomeViewController.swift */; };
 		D408125F1D60599500CC0D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D408125D1D60599500CC0D11 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCoupons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40190D11D659EFF00956BCD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D40190D21D659EFF00956BCD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		D40812561D60599500CC0D11 /* MyCoupons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoupons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40812591D60599500CC0D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D408125B1D60599500CC0D11 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40190D31D659EFF00956BCD /* CoreAudio.framework in Frameworks */,
+				D40190D41D659EFF00956BCD /* CoreAudioKit.framework in Frameworks */,
 				D40812721D6063F100CC0D11 /* CoreMotion.framework in Frameworks */,
 				D40812701D6063DA00CC0D11 /* CoreLocation.framework in Frameworks */,
 				D408126E1D6063B900CC0D11 /* MapKit.framework in Frameworks */,
@@ -95,6 +101,8 @@
 		75A26039B59850013A52674C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D40190D11D659EFF00956BCD /* CoreAudio.framework */,
+				D40190D21D659EFF00956BCD /* CoreAudioKit.framework */,
 				D40812711D6063F100CC0D11 /* CoreMotion.framework */,
 				D408126F1D6063DA00CC0D11 /* CoreLocation.framework */,
 				D408126D1D6063B900CC0D11 /* MapKit.framework */,

@@ -27,6 +27,9 @@
                                         <state key="normal" title="Browse Products">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="browseProducts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9z2-9F-4vn"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckn-IF-gLq">
                                         <rect key="frame" x="560" y="0.0" width="0.0" height="50"/>
