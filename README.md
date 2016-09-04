@@ -91,13 +91,12 @@ The purpose of this sample is to demonstrate IBM MobileFirst Foundation features
 
 ### Using Analytics
 
-  * After using the app for a while you can view the [MobileFirst Analytics Console](http://localhost:9080/analytics/console/dashboard) and build your custom charts like below:
+  * After using the app for a while you go to the [MobileFirst Analytics Console](http://localhost:9080/analytics/console/dashboard) and build your custom charts like below:
   ![Scope Mapping](./images/analytics.png)
-   
 
 
 ### Supported Levels
-IBM MobileFirst Platform Foundation 7.1
+IBM MobileFirst Foundation 8.0
 
 ### License
 Copyright 2016 IBM Corp.
