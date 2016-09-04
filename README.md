@@ -4,7 +4,7 @@ This purpose of this sample is to demonstrate IBM MobileFirst Foundation feature
 
 ### Demo
 
-## Prerequisites
+### Prerequisites
 1. [Installed Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. Pre-installed IBM MobileFirst Platform [development environment](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/setting-up-your-development-environment/).
 3. Understanding the IBM MobileFirst Platform [Authentication and Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).
@@ -51,7 +51,7 @@ This purpose of this sample is to demonstrate IBM MobileFirst Foundation feature
       ```
   - Import the Live Update segments:
     * The segments to import is located in the file **segments.txt**
-    * Import the schema by executing the following script (save the script to file first):
+    * Import the segments by executing the following script (save the script to file first):
 
       ```bash
       #!/bin/bash
