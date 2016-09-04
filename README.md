@@ -1,8 +1,8 @@
 # Coupons App
 
-This iOS native sample app purpose is to demonstrate IBM MobileFirst Foundation features such as [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).  This app sample using [AR](https://www.wikiwand.com/en/Augmented_reality) to shows coupons that which customers of a shop or business can picks, what can help the business get more traffic.
+This purpose of this sample is to demonstrate IBM MobileFirst Foundation features such as [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).  This app sample using [AR](https://www.wikiwand.com/en/Augmented_reality) to shows coupons that which customers of a shop or business can picks, what can help the business get more traffic.
 
-## Demo
+### Demo
 
 ## Prerequisites
 1. [Installed Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -11,7 +11,7 @@ This iOS native sample app purpose is to demonstrate IBM MobileFirst Foundation 
 4. Understanding the IBM MobileFirst Platform [Java Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/java-adapters/).
 5. Understanding the IBM MobileFirst Platform [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/).
 
-## Running the sample
+### Running the sample
 
 - Clone this repository   
 
@@ -28,7 +28,7 @@ This iOS native sample app purpose is to demonstrate IBM MobileFirst Foundation 
 - Deploy the `UserLogin` Security Test Adapter (same instructions as `CouponsAdapter`)
 - Deploy the `ClubMemberTypeSegmentResolver` adapter (same instructions as `CouponsAdapter`)
 
-- Deploy the `Live Update` adapter by following this [link](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/#adding-live-update-to-mobilefirst-server)
+- Deploy the `Live Update Adapter` by following this  [link](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/#adding-live-update-to-mobilefirst-server)
 
 >Note: maven is just one way to build and deploy adapters, to learn more about adapters see the following [link](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/)
 
@@ -36,11 +36,12 @@ This iOS native sample app purpose is to demonstrate IBM MobileFirst Foundation 
   * Register the application with [mfpdev CLI](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/using-mobilefirst-cli-to-manage-mobilefirst-artifacts/):
   * From a **Command-line**, navigate to the **CouponsApp** project's root folder
   * Register the app by using by executing `mfpdev app register`
-  >Note: you can also register app direct from console (Applications->new)
+
+>Note: you can also register app direct from console (Applications->new)
 
 - Configure the `Live Update Settings`
   - Set the resolver adapter name
-    * From [console](http://localhost:9080/mfpconsole) go to **Adapters->Live Update Adapter** and set the **segmentResolverAdapterName** to be `ClubMemberTypeSegmentResolver`
+    * From the [MobileFirst Operations console](http://localhost:9080/mfpconsole) go to **Adapters->Live Update Adapter** and set the **segmentResolverAdapterName** to be `ClubMemberTypeSegmentResolver`
   - Import the Live Update schema
     * The scheme to import is located in the file **schema.txt**
     * Import the schema by executing the following curl command:
@@ -64,25 +65,30 @@ This iOS native sample app purpose is to demonstrate IBM MobileFirst Foundation 
       done
       ```
 - Security configuration
-  * From [console](http://localhost:9080/mfpconsole) go to **Applications->CouponsApp->iOS->Security(Tab)**. In `Scope-Elements Mapping` map scope `configuration-user-login` to UserLogin.  Do the same for scope `club-member-scope`.  
+  * From [MobileFirst Operations console](http://localhost:9080/mfpconsole) go to **Applications->CouponsApp->iOS->Security(Tab)**. In `Scope-Elements Mapping` map scope `configuration-user-login` to UserLogin.  Do the same for scope `club-member-scope`.  
   ![Scope Mapping](./images/scopeMapping.png)
 
 - Coupons Adapter configuration -
-  * From [console](http://localhost:9080/mfpconsole) go to **Adapters->Coupons Adapter**. In `Configurations` set the `LATITUDE` and `LONGITUDE` to be values which is near your current location.  Those values will be used by the adapter to randomize coupons and gifts around your current location.
+  * From [MobileFirst Operations console](http://localhost:9080/mfpconsole) go to **Adapters->Coupons Adapter**. In `Configurations` set the `LATITUDE` and `LONGITUDE` to be values which is near your current location.  Those values will be used by the adapter to randomize coupons and gifts around your current location.
 
 
-## Using the sample
+### Using the sample
 
-  * The sample allow the customers to collect coupons.  When the `ar_coupon` feature is enabled users from the relevant segment (regular/premium/vip) can start pick up coupons by pressing the `Look for coupons` button after login.  To login just enter username which is equals the password, e.g: John/John. Pressing on the `Look for coupons` button will load augmented reality with the coupons and gifts.  The user is divides into 3 segments: regular/premium/vip. The user segment is defined by the first letter of his username and is implemented in `ClubMemberTypeSegmentResolverResource`:
+  * The sample allow the customers to collect coupons.  When the `ar_coupon` feature is enabled to a segment (regular/premium/vip), users from the relevant segment can start pick up coupons by pressing the `Look for coupons` button.  
+
+  * To be able login just enter username which is equals the password, e.g: John/John. Pressing on the `Look for coupons` button will load augmented reality with the coupons and gifts.  The user is divides into 3 segments: regular/premium/vip. The user segment is defined by the first letter of his username and is implemented in `ClubMemberTypeSegmentResolverResource`:
 
   ```java
   char firstCharacter = authenticatedUser.getDisplayName().charAt(0);
 
-	boolean isPremiumMember = firstCharacter >= 'I' && firstCharacter <= 'Q' || firstCharacter >= 'i' && firstCharacter <= 'q';
-	boolean isVIPMember = firstCharacter >= 'R' && firstCharacter <= 'Z' || firstCharacter >= 'r' && firstCharacter <= 'z';
+  boolean isPremiumMember = firstCharacter >= 'I' && firstCharacter <= 'Q' || firstCharacter >= 'i' && firstCharacter <= 'q';
+  boolean isVIPMember = firstCharacter >= 'R' && firstCharacter <= 'Z' || firstCharacter >= 'r' && firstCharacter <= 'z';
 
-	return isVIPMember ? "vip" : isPremiumMember ? "premium"  : "regular";
+  return isVIPMember ? "vip" : isPremiumMember ? "premium"  : "regular";
   ```
+
+  * In [MobileFirst Operations console](http://localhost:9080/mfpconsole) you can go to `Live Update Settings` under **Applications->CouponsApp->Live Update Settings** and change features and properties to see how they affect the app.  e.g.: change the discountPickableRadius and reload the coupons to see how it affect the distance of coupons which can be picked.
+
 
   ### Supported Levels
   IBM MobileFirst Platform Foundation 7.1
