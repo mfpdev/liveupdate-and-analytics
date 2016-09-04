@@ -1,6 +1,6 @@
 # Coupons App
 
-The purpose of this sample is to demonstrate IBM MobileFirst Foundation features such as [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).  This app sample using [AR](https://www.wikiwand.com/en/Augmented_reality) to shows coupons that which customers of a shop or business can picks, what can help the business get more traffic to the business.
+The purpose of this sample is to demonstrate IBM MobileFirst Foundation features such as [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).  This app sample using [AR](https://www.wikiwand.com/en/Augmented_reality) to show coupons that customers of a shop or business can select and pick, an action that can help the business get more traffic.
 
 ### Demo
 
@@ -95,6 +95,8 @@ The purpose of this sample is to demonstrate IBM MobileFirst Foundation features
   * After using the app for a while you go to the [MobileFirst Analytics Console](http://localhost:9080/analytics/console/dashboard) and build your custom charts like below:
   ![Scope Mapping](./images/analytics.png)
 
+### Architecture
+![Architecture](./images/architecture.png)
 
 ### Supported Levels
 IBM MobileFirst Foundation 8.0
