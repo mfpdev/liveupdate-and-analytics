@@ -1,8 +1,8 @@
 # Coupons App
 
-The purpose of this sample is to demonstrate IBM MobileFirst Foundation features such as [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).  This app sample using [AR](https://www.wikiwand.com/en/Augmented_reality) to show coupons that customers of a shop or business can pick to get more traffic to the business.
+The purpose of this sample is to show you how to gradually rollout a new feature, and measure its success, using MobileFirst Foundation capabilities. It also shows you how you can fine-tune aspects of the new feature in response to user feedback, without releasing a new version of your app. The new feature introduced in this sample app allows users to collect [Augmented Reality](https://www.wikiwand.com/en/Augmented_reality) coupons, using the phone camera to scan for coupons “in the field.” Similar to collecting Pokemon in the recent popular game [Pokemon Go](http://www.pokemongo.com/).
 
-### Demo
+ The MobileFirst Foundation features highlighted in this sample are [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security Frameworks](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).
 
 ### Prerequisites
 1. [Installed Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -101,7 +101,7 @@ The purpose of this sample is to demonstrate IBM MobileFirst Foundation features
 | Propery Name   |      Id      |  Description |
 |:----------|:-------------|:------|
 | Club Image |  clubImage | Image for club type (regular/premium/vip) |
-| Coupon Pickable Radius|  discountPickableRadius | The radius in meter to be able pick a discount coupon |
+| Coupon Pickable Radius|  discountPickableRadius | The radius in meters to be able pick a discount coupon |
 | Gift Pickable Radius |  giftPickableRadius | The radius in meters to be able pick a gift |
 | The coupons resource adapter URL |  coupons_adapter_url | Return JSON of coupons for the relevant segment|
 | Welcome Message |  welcomeMessage | Welcome message for the app user (after login)|
