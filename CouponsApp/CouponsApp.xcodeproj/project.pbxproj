@@ -10,66 +10,69 @@
 		A3A77A1C84732FAFE7D5889F /* Pods_MyCoupons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */; };
 		D40190D31D659EFF00956BCD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40190D11D659EFF00956BCD /* CoreAudio.framework */; };
 		D40190D41D659EFF00956BCD /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40190D21D659EFF00956BCD /* CoreAudioKit.framework */; };
-		D40190D61D65D1BF00956BCD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40190D51D65D1BF00956BCD /* Utils.swift */; };
-		D408125A1D60599500CC0D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40812591D60599500CC0D11 /* AppDelegate.swift */; };
-		D408125C1D60599500CC0D11 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408125B1D60599500CC0D11 /* WelcomeViewController.swift */; };
-		D408125F1D60599500CC0D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D408125D1D60599500CC0D11 /* Main.storyboard */; };
-		D40812611D60599500CC0D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40812601D60599500CC0D11 /* Assets.xcassets */; };
-		D40812641D60599500CC0D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40812621D60599500CC0D11 /* LaunchScreen.storyboard */; };
-		D408126C1D6062CA00CC0D11 /* CouponAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */; };
 		D408126E1D6063B900CC0D11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D408126D1D6063B900CC0D11 /* MapKit.framework */; };
 		D40812701D6063DA00CC0D11 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D408126F1D6063DA00CC0D11 /* CoreLocation.framework */; };
 		D40812721D6063F100CC0D11 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40812711D6063F100CC0D11 /* CoreMotion.framework */; };
-		D4412F431D63959800A2843F /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D4412F411D63959800A2843F /* check.png */; };
-		D4412F461D63962F00A2843F /* store_0.png in Resources */ = {isa = PBXBuildFile; fileRef = D4412F451D63962F00A2843F /* store_0.png */; };
-		D4534FD21D619D36003153A7 /* CouponARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */; };
 		D4534FD41D61A5B9003153A7 /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4534FD31D61A5B9003153A7 /* mfpclient.plist */; };
-		D4534FD81D62D940003153A7 /* UserLoginChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4534FD71D62D940003153A7 /* UserLoginChallengeHandler.swift */; };
-		D4B8AAA21D63ACD800E9D9C7 /* store_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AA9D1D63ACD800E9D9C7 /* store_1.png */; };
-		D4B8AAA31D63ACD800E9D9C7 /* store_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AA9E1D63ACD800E9D9C7 /* store_2.png */; };
-		D4B8AAA41D63ACD800E9D9C7 /* store_3.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AA9F1D63ACD800E9D9C7 /* store_3.png */; };
-		D4B8AAA51D63ACD800E9D9C7 /* store_4.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AAA01D63ACD800E9D9C7 /* store_4.png */; };
-		D4B8AAA61D63ACD800E9D9C7 /* store_5.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AAA11D63ACD800E9D9C7 /* store_5.png */; };
-		D4B8AAB11D64872F00E9D9C7 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B8AAB01D64872F00E9D9C7 /* UserLoginViewController.swift */; };
-		D4B8AAB91D648FF700E9D9C7 /* %50.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AAB41D648FF700E9D9C7 /* %50.png */; };
-		D4B8AABA1D648FF700E9D9C7 /* $5.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AAB51D648FF700E9D9C7 /* $5.png */; };
-		D4B8AABB1D648FF700E9D9C7 /* $10.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AAB61D648FF700E9D9C7 /* $10.png */; };
-		D4B8AABC1D648FF700E9D9C7 /* 30p.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AAB71D648FF700E9D9C7 /* 30p.png */; };
-		D4B8AABD1D648FF700E9D9C7 /* 70p.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B8AAB81D648FF700E9D9C7 /* 70p.png */; };
+		D4E01C291D7826FC0084C979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C121D7826FC0084C979 /* Assets.xcassets */; };
+		D4E01C2A1D7826FC0084C979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E01C141D7826FC0084C979 /* AppDelegate.swift */; };
+		D4E01C2B1D7826FC0084C979 /* CouponAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E01C151D7826FC0084C979 /* CouponAnnotationView.swift */; };
+		D4E01C2C1D7826FC0084C979 /* CouponARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E01C161D7826FC0084C979 /* CouponARAnnotation.swift */; };
+		D4E01C2D1D7826FC0084C979 /* UserLoginChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E01C171D7826FC0084C979 /* UserLoginChallengeHandler.swift */; };
+		D4E01C2E1D7826FC0084C979 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E01C181D7826FC0084C979 /* UserLoginViewController.swift */; };
+		D4E01C2F1D7826FC0084C979 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E01C191D7826FC0084C979 /* Utils.swift */; };
+		D4E01C301D7826FC0084C979 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E01C1A1D7826FC0084C979 /* WelcomeViewController.swift */; };
+		D4E01C311D7826FC0084C979 /* $10.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C1C1D7826FC0084C979 /* $10.png */; };
+		D4E01C321D7826FC0084C979 /* $5.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C1D1D7826FC0084C979 /* $5.png */; };
+		D4E01C331D7826FC0084C979 /* %50.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C1E1D7826FC0084C979 /* %50.png */; };
+		D4E01C341D7826FC0084C979 /* 30p.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C1F1D7826FC0084C979 /* 30p.png */; };
+		D4E01C351D7826FC0084C979 /* 70p.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C201D7826FC0084C979 /* 70p.png */; };
+		D4E01C361D7826FC0084C979 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C211D7826FC0084C979 /* check.png */; };
+		D4E01C371D7826FC0084C979 /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C221D7826FC0084C979 /* empty.png */; };
+		D4E01C381D7826FC0084C979 /* store_0.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C231D7826FC0084C979 /* store_0.png */; };
+		D4E01C391D7826FC0084C979 /* store_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C241D7826FC0084C979 /* store_1.png */; };
+		D4E01C3A1D7826FC0084C979 /* store_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C251D7826FC0084C979 /* store_2.png */; };
+		D4E01C3B1D7826FC0084C979 /* store_3.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C261D7826FC0084C979 /* store_3.png */; };
+		D4E01C3C1D7826FC0084C979 /* store_4.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C271D7826FC0084C979 /* store_4.png */; };
+		D4E01C3D1D7826FC0084C979 /* store_5.png in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C281D7826FC0084C979 /* store_5.png */; };
+		D4E01C3F1D7827390084C979 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C3E1D7827390084C979 /* Info.plist */; };
+		D4E01C451D7828580084C979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C411D7828580084C979 /* LaunchScreen.storyboard */; };
+		D4E01C461D7828580084C979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E01C431D7828580084C979 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCoupons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40190D11D659EFF00956BCD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		D40190D21D659EFF00956BCD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
-		D40190D51D65D1BF00956BCD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = ../Utils.swift; sourceTree = "<group>"; };
-		D40812561D60599500CC0D11 /* MyCoupons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoupons.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D40812591D60599500CC0D11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D408125B1D60599500CC0D11 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		D408125E1D60599500CC0D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D40812601D60599500CC0D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D40812631D60599500CC0D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D40812651D60599500CC0D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponAnnotationView.swift; sourceTree = "<group>"; };
+		D40812561D60599500CC0D11 /* CouponsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CouponsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D408126D1D6063B900CC0D11 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D408126F1D6063DA00CC0D11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D40812711D6063F100CC0D11 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		D4412F411D63959800A2843F /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
-		D4412F451D63962F00A2843F /* store_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_0.png; sourceTree = "<group>"; };
-		D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponARAnnotation.swift; sourceTree = "<group>"; };
 		D4534FD31D61A5B9003153A7 /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
-		D4534FD71D62D940003153A7 /* UserLoginChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginChallengeHandler.swift; sourceTree = "<group>"; };
-		D4B8AA9D1D63ACD800E9D9C7 /* store_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_1.png; sourceTree = "<group>"; };
-		D4B8AA9E1D63ACD800E9D9C7 /* store_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_2.png; sourceTree = "<group>"; };
-		D4B8AA9F1D63ACD800E9D9C7 /* store_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_3.png; sourceTree = "<group>"; };
-		D4B8AAA01D63ACD800E9D9C7 /* store_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_4.png; sourceTree = "<group>"; };
-		D4B8AAA11D63ACD800E9D9C7 /* store_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_5.png; sourceTree = "<group>"; };
-		D4B8AAB01D64872F00E9D9C7 /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
-		D4B8AAB41D648FF700E9D9C7 /* %50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "%50.png"; sourceTree = "<group>"; };
-		D4B8AAB51D648FF700E9D9C7 /* $5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = $5.png; sourceTree = "<group>"; };
-		D4B8AAB61D648FF700E9D9C7 /* $10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = $10.png; sourceTree = "<group>"; };
-		D4B8AAB71D648FF700E9D9C7 /* 30p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30p.png; sourceTree = "<group>"; };
-		D4B8AAB81D648FF700E9D9C7 /* 70p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 70p.png; sourceTree = "<group>"; };
+		D4E01C121D7826FC0084C979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4E01C141D7826FC0084C979 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4E01C151D7826FC0084C979 /* CouponAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponAnnotationView.swift; sourceTree = "<group>"; };
+		D4E01C161D7826FC0084C979 /* CouponARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponARAnnotation.swift; sourceTree = "<group>"; };
+		D4E01C171D7826FC0084C979 /* UserLoginChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginChallengeHandler.swift; sourceTree = "<group>"; };
+		D4E01C181D7826FC0084C979 /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		D4E01C191D7826FC0084C979 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D4E01C1A1D7826FC0084C979 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D4E01C1C1D7826FC0084C979 /* $10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = $10.png; sourceTree = "<group>"; };
+		D4E01C1D1D7826FC0084C979 /* $5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = $5.png; sourceTree = "<group>"; };
+		D4E01C1E1D7826FC0084C979 /* %50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "%50.png"; sourceTree = "<group>"; };
+		D4E01C1F1D7826FC0084C979 /* 30p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30p.png; sourceTree = "<group>"; };
+		D4E01C201D7826FC0084C979 /* 70p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 70p.png; sourceTree = "<group>"; };
+		D4E01C211D7826FC0084C979 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		D4E01C221D7826FC0084C979 /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
+		D4E01C231D7826FC0084C979 /* store_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_0.png; sourceTree = "<group>"; };
+		D4E01C241D7826FC0084C979 /* store_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_1.png; sourceTree = "<group>"; };
+		D4E01C251D7826FC0084C979 /* store_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_2.png; sourceTree = "<group>"; };
+		D4E01C261D7826FC0084C979 /* store_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_3.png; sourceTree = "<group>"; };
+		D4E01C271D7826FC0084C979 /* store_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_4.png; sourceTree = "<group>"; };
+		D4E01C281D7826FC0084C979 /* store_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_5.png; sourceTree = "<group>"; };
+		D4E01C3E1D7827390084C979 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E01C421D7828580084C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4E01C441D7828580084C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.release.xcconfig"; sourceTree = "<group>"; };
 		F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,66 +119,67 @@
 		D408124D1D60599500CC0D11 = {
 			isa = PBXGroup;
 			children = (
-				D4534FD31D61A5B9003153A7 /* mfpclient.plist */,
-				D40812581D60599500CC0D11 /* MyCoupons */,
+				D4E01C3E1D7827390084C979 /* Info.plist */,
+				D4E01C131D7826FC0084C979 /* Classes */,
+				D4E01C1B1D7826FC0084C979 /* Images */,
 				D40812571D60599500CC0D11 /* Products */,
 				6DCF3B555EE54F2BED207BA0 /* Pods */,
 				75A26039B59850013A52674C /* Frameworks */,
+				D4E01C121D7826FC0084C979 /* Assets.xcassets */,
+				D4534FD31D61A5B9003153A7 /* mfpclient.plist */,
+				D4E01C411D7828580084C979 /* LaunchScreen.storyboard */,
+				D4E01C431D7828580084C979 /* Main.storyboard */,
 			);
 			sourceTree = "<group>";
 		};
 		D40812571D60599500CC0D11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D40812561D60599500CC0D11 /* MyCoupons.app */,
+				D40812561D60599500CC0D11 /* CouponsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D40812581D60599500CC0D11 /* MyCoupons */ = {
+		D4E01C131D7826FC0084C979 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D4412F401D63959800A2843F /* images */,
-				D40812591D60599500CC0D11 /* AppDelegate.swift */,
-				D408125B1D60599500CC0D11 /* WelcomeViewController.swift */,
-				D4534FD11D619D36003153A7 /* CouponARAnnotation.swift */,
-				D408126B1D6062CA00CC0D11 /* CouponAnnotationView.swift */,
-				D4534FD71D62D940003153A7 /* UserLoginChallengeHandler.swift */,
-				D4B8AAB01D64872F00E9D9C7 /* UserLoginViewController.swift */,
-				D40190D51D65D1BF00956BCD /* Utils.swift */,
-				D408125D1D60599500CC0D11 /* Main.storyboard */,
-				D40812601D60599500CC0D11 /* Assets.xcassets */,
-				D40812621D60599500CC0D11 /* LaunchScreen.storyboard */,
-				D40812651D60599500CC0D11 /* Info.plist */,
+				D4E01C141D7826FC0084C979 /* AppDelegate.swift */,
+				D4E01C151D7826FC0084C979 /* CouponAnnotationView.swift */,
+				D4E01C161D7826FC0084C979 /* CouponARAnnotation.swift */,
+				D4E01C171D7826FC0084C979 /* UserLoginChallengeHandler.swift */,
+				D4E01C181D7826FC0084C979 /* UserLoginViewController.swift */,
+				D4E01C191D7826FC0084C979 /* Utils.swift */,
+				D4E01C1A1D7826FC0084C979 /* WelcomeViewController.swift */,
 			);
-			path = MyCoupons;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		D4412F401D63959800A2843F /* images */ = {
+		D4E01C1B1D7826FC0084C979 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D4B8AAB41D648FF700E9D9C7 /* %50.png */,
-				D4B8AAB51D648FF700E9D9C7 /* $5.png */,
-				D4B8AAB61D648FF700E9D9C7 /* $10.png */,
-				D4B8AAB71D648FF700E9D9C7 /* 30p.png */,
-				D4B8AAB81D648FF700E9D9C7 /* 70p.png */,
-				D4B8AA9D1D63ACD800E9D9C7 /* store_1.png */,
-				D4B8AA9E1D63ACD800E9D9C7 /* store_2.png */,
-				D4B8AA9F1D63ACD800E9D9C7 /* store_3.png */,
-				D4B8AAA01D63ACD800E9D9C7 /* store_4.png */,
-				D4B8AAA11D63ACD800E9D9C7 /* store_5.png */,
-				D4412F451D63962F00A2843F /* store_0.png */,
-				D4412F411D63959800A2843F /* check.png */,
+				D4E01C1C1D7826FC0084C979 /* $10.png */,
+				D4E01C1D1D7826FC0084C979 /* $5.png */,
+				D4E01C1E1D7826FC0084C979 /* %50.png */,
+				D4E01C1F1D7826FC0084C979 /* 30p.png */,
+				D4E01C201D7826FC0084C979 /* 70p.png */,
+				D4E01C211D7826FC0084C979 /* check.png */,
+				D4E01C221D7826FC0084C979 /* empty.png */,
+				D4E01C231D7826FC0084C979 /* store_0.png */,
+				D4E01C241D7826FC0084C979 /* store_1.png */,
+				D4E01C251D7826FC0084C979 /* store_2.png */,
+				D4E01C261D7826FC0084C979 /* store_3.png */,
+				D4E01C271D7826FC0084C979 /* store_4.png */,
+				D4E01C281D7826FC0084C979 /* store_5.png */,
 			);
-			path = images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D40812551D60599500CC0D11 /* MyCoupons */ = {
+		D40812551D60599500CC0D11 /* CouponsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D40812681D60599500CC0D11 /* Build configuration list for PBXNativeTarget "MyCoupons" */;
+			buildConfigurationList = D40812681D60599500CC0D11 /* Build configuration list for PBXNativeTarget "CouponsApp" */;
 			buildPhases = (
 				990B06DC15918BD31A907F24 /* [CP] Check Pods Manifest.lock */,
 				D40812521D60599500CC0D11 /* Sources */,
@@ -188,9 +192,9 @@
 			);
 			dependencies = (
 			);
-			name = MyCoupons;
+			name = CouponsApp;
 			productName = MyCoupons;
-			productReference = D40812561D60599500CC0D11 /* MyCoupons.app */;
+			productReference = D40812561D60599500CC0D11 /* CouponsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D40812511D60599500CC0D11 /* Build configuration list for PBXProject "MyCoupons" */;
+			buildConfigurationList = D40812511D60599500CC0D11 /* Build configuration list for PBXProject "CouponsApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,7 +230,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D40812551D60599500CC0D11 /* MyCoupons */,
+				D40812551D60599500CC0D11 /* CouponsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -236,22 +240,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B8AABA1D648FF700E9D9C7 /* $5.png in Resources */,
-				D4B8AABD1D648FF700E9D9C7 /* 70p.png in Resources */,
-				D4B8AAB91D648FF700E9D9C7 /* %50.png in Resources */,
-				D40812641D60599500CC0D11 /* LaunchScreen.storyboard in Resources */,
-				D4412F431D63959800A2843F /* check.png in Resources */,
-				D4B8AAA61D63ACD800E9D9C7 /* store_5.png in Resources */,
-				D4B8AABB1D648FF700E9D9C7 /* $10.png in Resources */,
-				D4B8AAA41D63ACD800E9D9C7 /* store_3.png in Resources */,
-				D4B8AAA21D63ACD800E9D9C7 /* store_1.png in Resources */,
-				D4412F461D63962F00A2843F /* store_0.png in Resources */,
-				D4B8AABC1D648FF700E9D9C7 /* 30p.png in Resources */,
-				D40812611D60599500CC0D11 /* Assets.xcassets in Resources */,
-				D4B8AAA31D63ACD800E9D9C7 /* store_2.png in Resources */,
+				D4E01C3F1D7827390084C979 /* Info.plist in Resources */,
+				D4E01C3A1D7826FC0084C979 /* store_2.png in Resources */,
+				D4E01C311D7826FC0084C979 /* $10.png in Resources */,
+				D4E01C291D7826FC0084C979 /* Assets.xcassets in Resources */,
+				D4E01C361D7826FC0084C979 /* check.png in Resources */,
+				D4E01C321D7826FC0084C979 /* $5.png in Resources */,
+				D4E01C351D7826FC0084C979 /* 70p.png in Resources */,
+				D4E01C451D7828580084C979 /* LaunchScreen.storyboard in Resources */,
+				D4E01C3D1D7826FC0084C979 /* store_5.png in Resources */,
+				D4E01C3C1D7826FC0084C979 /* store_4.png in Resources */,
+				D4E01C391D7826FC0084C979 /* store_1.png in Resources */,
+				D4E01C371D7826FC0084C979 /* empty.png in Resources */,
+				D4E01C381D7826FC0084C979 /* store_0.png in Resources */,
+				D4E01C341D7826FC0084C979 /* 30p.png in Resources */,
+				D4E01C3B1D7826FC0084C979 /* store_3.png in Resources */,
+				D4E01C461D7828580084C979 /* Main.storyboard in Resources */,
 				D4534FD41D61A5B9003153A7 /* mfpclient.plist in Resources */,
-				D408125F1D60599500CC0D11 /* Main.storyboard in Resources */,
-				D4B8AAA51D63ACD800E9D9C7 /* store_4.png in Resources */,
+				D4E01C331D7826FC0084C979 /* %50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,33 +316,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D408125C1D60599500CC0D11 /* WelcomeViewController.swift in Sources */,
-				D408126C1D6062CA00CC0D11 /* CouponAnnotationView.swift in Sources */,
-				D4534FD81D62D940003153A7 /* UserLoginChallengeHandler.swift in Sources */,
-				D40190D61D65D1BF00956BCD /* Utils.swift in Sources */,
-				D4B8AAB11D64872F00E9D9C7 /* UserLoginViewController.swift in Sources */,
-				D408125A1D60599500CC0D11 /* AppDelegate.swift in Sources */,
-				D4534FD21D619D36003153A7 /* CouponARAnnotation.swift in Sources */,
+				D4E01C2C1D7826FC0084C979 /* CouponARAnnotation.swift in Sources */,
+				D4E01C2E1D7826FC0084C979 /* UserLoginViewController.swift in Sources */,
+				D4E01C2A1D7826FC0084C979 /* AppDelegate.swift in Sources */,
+				D4E01C2B1D7826FC0084C979 /* CouponAnnotationView.swift in Sources */,
+				D4E01C2D1D7826FC0084C979 /* UserLoginChallengeHandler.swift in Sources */,
+				D4E01C2F1D7826FC0084C979 /* Utils.swift in Sources */,
+				D4E01C301D7826FC0084C979 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D408125D1D60599500CC0D11 /* Main.storyboard */ = {
+		D4E01C411D7828580084C979 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D408125E1D60599500CC0D11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D40812621D60599500CC0D11 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D40812631D60599500CC0D11 /* Base */,
+				D4E01C421D7828580084C979 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		D4E01C431D7828580084C979 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E01C441D7828580084C979 /* Base */,
+			);
+			name = Main.storyboard;
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,11 +438,11 @@
 			baseConfigurationReference = F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MyCoupons/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.CouponsApp;
+				PRODUCT_NAME = CouponsApp;
 			};
 			name = Debug;
 		};
@@ -443,18 +451,18 @@
 			baseConfigurationReference = EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MyCoupons/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.CouponsApp;
+				PRODUCT_NAME = CouponsApp;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D40812511D60599500CC0D11 /* Build configuration list for PBXProject "MyCoupons" */ = {
+		D40812511D60599500CC0D11 /* Build configuration list for PBXProject "CouponsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D40812661D60599500CC0D11 /* Debug */,
@@ -463,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D40812681D60599500CC0D11 /* Build configuration list for PBXNativeTarget "MyCoupons" */ = {
+		D40812681D60599500CC0D11 /* Build configuration list for PBXNativeTarget "CouponsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D40812691D60599500CC0D11 /* Debug */,

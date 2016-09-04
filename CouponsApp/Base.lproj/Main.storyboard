@@ -8,7 +8,7 @@
         <!--Coupon-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Coupon" customClass="WelcomeViewController" customModule="MyCoupons" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Coupon" customClass="WelcomeViewController" customModule="CouponsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -121,7 +121,7 @@
         <!--User Login View Controller-->
         <scene sceneID="pvg-cx-waz">
             <objects>
-                <viewController storyboardIdentifier="UserLoginViewController" id="fsg-I1-K6K" customClass="UserLoginViewController" customModule="MyCoupons" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserLoginViewController" id="fsg-I1-K6K" customClass="UserLoginViewController" customModule="CouponsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KS5-5h-GKB"/>
                         <viewControllerLayoutGuide type="bottom" id="VkD-rC-807"/>
