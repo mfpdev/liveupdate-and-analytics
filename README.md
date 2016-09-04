@@ -40,16 +40,16 @@ This purpose of this sample is to demonstrate IBM MobileFirst Foundation feature
 >Note: you can also register app direct from console (Applications->new)
 
 - Configure the `Live Update Settings`
-  - Set the resolver adapter name
+  - Set the resolver adapter name:
     * From the [MobileFirst Operations console](http://localhost:9080/mfpconsole) go to **Adapters->Live Update Adapter** and set the **segmentResolverAdapterName** to be `ClubMemberTypeSegmentResolver`
-  - Import the Live Update schema
+  - Import the Live Update schema:
     * The scheme to import is located in the file **schema.txt**
     * Import the schema by executing the following curl command:
 
       ```bash
       curl -X PUT -d @schema.txt --user admin:admin -H "Content-Type:application/json" http://localhost:9080/mfpadmin/management-apis/2.0/runtimes/mfp/admin-plugins/liveUpdateAdapter/com.github.mfpdev.sample.CouponsApp/schema
       ```
-  - Import the Live Update segments
+  - Import the Live Update segments:
     * The segments to import is located in the file **segments.txt**
     * Import the schema by executing the following script (save the script to file first):
 
@@ -68,13 +68,13 @@ This purpose of this sample is to demonstrate IBM MobileFirst Foundation feature
   * From [MobileFirst Operations console](http://localhost:9080/mfpconsole) go to **Applications->CouponsApp->iOS->Security(Tab)**. In `Scope-Elements Mapping` map scope `configuration-user-login` to UserLogin.  Do the same for scope `club-member-scope`.  
   ![Scope Mapping](./images/scopeMapping.png)
 
-- Coupons Adapter configuration -
+- Coupons Adapter configuration
   * From [MobileFirst Operations console](http://localhost:9080/mfpconsole) go to **Adapters->Coupons Adapter**. In `Configurations` set the `LATITUDE` and `LONGITUDE` to be values which is near your current location.  Those values will be used by the adapter to randomize coupons and gifts around your current location.
 
 
 ### Using the sample
 
-  * The sample allow the customers to collect coupons.  When the `ar_coupon` feature is enabled to a segment (regular/premium/vip), users from the relevant segment can start pick up coupons by pressing the `Look for coupons` button.  
+  * The sample allow the customers to collect coupons of .  When the `ar_coupon` feature is enabled to a segment (regular/premium/vip), users from the relevant segment can start pick up coupons by pressing the `Look for coupons` button.  
 
   * To be able login just enter username which is equals the password, e.g: John/John. Pressing on the `Look for coupons` button will load augmented reality with the coupons and gifts.  The user is divides into 3 segments: regular/premium/vip. The user segment is defined by the first letter of his username and is implemented in `ClubMemberTypeSegmentResolverResource`:
 
