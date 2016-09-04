@@ -34,8 +34,8 @@ This purpose of this sample is to demonstrate IBM MobileFirst Foundation feature
 
 - Register the `CouponsApp` native iOS app
   * Register the application with [mfpdev CLI](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/using-mobilefirst-cli-to-manage-mobilefirst-artifacts/):
-  * From a **Command-line**, navigate to the **CouponsApp** project's root folder
-  * Register the app by using by executing `mfpdev app register`
+    * From a **Command-line**, navigate to the **CouponsApp** project's root folder
+    * Register the app by using by executing `mfpdev app register`
 
 >Note: you can also register app direct from console (Applications->new)
 
@@ -74,7 +74,7 @@ This purpose of this sample is to demonstrate IBM MobileFirst Foundation feature
 
 ### Using the sample
 
-  * The sample allow the customers to collect coupons of .  When the `ar_coupon` feature is enabled to a segment (regular/premium/vip), users from the relevant segment can start pick up coupons by pressing the `Look for coupons` button.  
+  * The sample allow the customers to collect coupons of business / store which wants to attract the customer to come to the business / store.  When the `ar_coupon` feature is enabled to a segment (regular/premium/vip), users from the relevant segment can start pick up coupons by pressing the `Look for coupons` button.  
 
   * To be able login just enter username which is equals the password, e.g: John/John. Pressing on the `Look for coupons` button will load augmented reality with the coupons and gifts.  The user is divides into 3 segments: regular/premium/vip. The user segment is defined by the first letter of his username and is implemented in `ClubMemberTypeSegmentResolverResource`:
 
