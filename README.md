@@ -92,7 +92,7 @@ The purpose of this sample is to demonstrate IBM MobileFirst Foundation features
 
 ### Live Update configurations options
 
-* Summary tables showing the options available for these application:
+* Summary tables showing the options available for this application:
 
 | Feature Name   |      Id      |  Description |
 |:----------|:-------------|:------|
@@ -102,7 +102,7 @@ The purpose of this sample is to demonstrate IBM MobileFirst Foundation features
 |:----------|:-------------|:------|
 | Club Image |  clubImage | Image for club type (regular/premium/vip) |
 | Coupon Pickable Radius|  discountPickableRadius | The radius in meter to be able pick a discount coupon |
-| Gift Pickable Radius |  giftPickableRadius | The radius in meter to be able pick a gift |
+| Gift Pickable Radius |  giftPickableRadius | The radius in meters to be able pick a gift |
 | The coupons resource adapter URL |  coupons_adapter_url | Return JSON of coupons for the relevant segment|
 | Welcome Message |  welcomeMessage | Welcome message for the app user (after login)|
 
