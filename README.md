@@ -71,6 +71,7 @@ The purpose of this sample is to demonstrate IBM MobileFirst Foundation features
 - Coupons Adapter configuration
   * From [MobileFirst Operations console](http://localhost:9080/mfpconsole) go to **Adapters->Coupons Adapter**. In `Configurations` set the `LATITUDE` and `LONGITUDE` to be values which is near your current location.  Those values will be used by the adapter to randomize coupons and gifts around your current location.
 
+    ![Scope Mapping](./images/adapterConfiguration.png)
 
 ### Using the sample
 
