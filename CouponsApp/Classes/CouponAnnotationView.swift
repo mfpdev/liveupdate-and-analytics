@@ -96,13 +96,15 @@ public class CouponAnnotationView: ARAnnotationView, UIGestureRecognizerDelegate
             if annotation.distanceFromUser > Double(annotation.enabledRadius!) {
                 let alertView = UIAlertView(title: annotation.title, message: "Coupon is too far, you need to get closer", delegate: nil, cancelButtonTitle: "OK")
                 AudioServicesPlaySystemSound(1306)
+                 (self.annotation as! CouponARAnnotation).isPicked = false
                 alertView.show()
             } else if !annotation.isPicked{
                 AudioServicesPlaySystemSound(1109)
                 (self.annotation as! CouponARAnnotation).imageURL = "check.png"
+                (self.annotation as! CouponARAnnotation).isPicked = true
                 loadUi()
             }
-            WLAnalytics.sharedInstance().log("coupon-not-picked", withMetadata: annotation.asMetaData());
+            WLAnalytics.sharedInstance().log("picked-coupon", withMetadata: annotation.asMetaData());
             WLAnalytics.sharedInstance().send();
         }
     }

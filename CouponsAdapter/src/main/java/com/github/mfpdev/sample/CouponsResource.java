@@ -75,20 +75,20 @@ public class CouponsResource {
         Coupon [] coupons = new Coupon[0];
 	    if (segment.equals(REGULAR)) {
             coupons = new Coupon[]{
-                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 5, Coupon.CouponType.GIFT)
+                    getCoupon (REGULAR, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (REGULAR, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (REGULAR, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (REGULAR, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (REGULAR, 5, Coupon.CouponType.GIFT)
             };
 		} else if (segment.equals(PREMIUM)){
             coupons = new Coupon[]{
-                    getCoupon (VIP, 30, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 50, Coupon.CouponType.DISCOUNT),
-                    getCoupon (VIP, 5, Coupon.CouponType.GIFT),
-                    getCoupon (VIP, 5, Coupon.CouponType.GIFT)
+                    getCoupon (PREMIUM, 30, Coupon.CouponType.DISCOUNT),
+                    getCoupon (PREMIUM, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (PREMIUM, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (PREMIUM, 50, Coupon.CouponType.DISCOUNT),
+                    getCoupon (PREMIUM, 5, Coupon.CouponType.GIFT),
+                    getCoupon (PREMIUM, 5, Coupon.CouponType.GIFT)
             };
 		} else if (segment.equals(VIP)){
 			coupons = new Coupon[]{
