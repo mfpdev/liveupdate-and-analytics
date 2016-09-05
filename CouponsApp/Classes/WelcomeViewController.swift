@@ -131,6 +131,7 @@ class WelcomeViewController: UIViewController, ARDataSource{
                 
                 let segment = coupons_adapter_url.componentsSeparatedByString("/").last
                 WLAnalytics.sharedInstance().log("load-coupons-pressed", withMetadata: ["load-coupons-pressed" : segment!]);
+                WLAnalytics.sharedInstance().send();
             }
         }
     }
