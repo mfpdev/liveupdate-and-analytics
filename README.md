@@ -117,6 +117,12 @@ The purpose of this sample is to show you how to gradually rollout a new feature
 ### Architecture
 ![Architecture](./images/architecture.png)
 
+### External dependencies frameworks used in the app
+
+* [HDAugmentedReality](https://github.com/DanijelHuis/HDAugmentedReality)
+
+* [SwiftyJSON](https://github.com/DanijelHuis/HDAugmentedReality)
+
 ### Supported Levels
 IBM MobileFirst Foundation 8.0
 
