@@ -127,7 +127,7 @@ class WelcomeViewController: UIViewController, ARDataSource{
             if let coupons_adapter_url = configuration?.getProperty("coupons_adapter_url"), let discountPickableRadius = configuration?.getProperty("discountPickableRadius"), let giftPickableRadius = configuration?.getProperty("giftPickableRadius") {
                 self.discountPickableRadius = Int(discountPickableRadius)
                 self.giftPickableRadius = Int(giftPickableRadius)
-                self.fertchCoupons(coupons_adapter_url)
+                self.fetchCoupons(coupons_adapter_url)
                 
                 let segment = coupons_adapter_url.componentsSeparatedByString("/").last
                 WLAnalytics.sharedInstance().log("load-coupons-pressed", withMetadata: ["load-coupons-pressed" : segment!]);
@@ -137,7 +137,7 @@ class WelcomeViewController: UIViewController, ARDataSource{
     }
     
     
-    private func fertchCoupons (coupons_adapter_url:String) {
+    private func ferchCoupons (coupons_adapter_url:String) {
         couponsAnnotations?.removeAll()
         let resourseRequest = WLResourceRequest(URL: NSURL(string:coupons_adapter_url)!, method:"GET")
         resourseRequest.sendWithCompletionHandler({ (response, error) -> Void in
