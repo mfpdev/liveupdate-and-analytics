@@ -62,9 +62,6 @@ public class ClubMemberTypeSegmentResolverResource {
 		ResolverAdapterData data = gson.fromJson(body, ResolverAdapterData.class);
 		String segmentName = "";
 
-		// Get the custom arguments
-		Map<String, List<String>> arguments = data.getQueryArguments();
-
 		// Get the authenticatedUser object
 		AuthenticatedUser authenticatedUser = data.getAuthenticatedUser();
 
