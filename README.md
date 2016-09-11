@@ -4,6 +4,12 @@ The purpose of this sample is to show you how to gradually rollout a new feature
 
  The MobileFirst Foundation features highlighted in this sample are [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security Framework](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).
 
+### Demo
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=OsfWxKXv7jo" target="_blank"><img src="http://img.youtube.com/vi/OsfWxKXv7jo/0.jpg" 
+alt="Gradual Feature Rollout with IBM MobileFirst Foundation 8.0" width="240" height="180" border="10" />
+</a>
+
 ### Prerequisites
 1. [Installed Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. Pre-installed IBM MobileFirst Platform [development environment](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/setting-up-your-development-environment/).
