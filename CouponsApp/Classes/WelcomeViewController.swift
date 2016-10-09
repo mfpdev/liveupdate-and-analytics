@@ -127,7 +127,7 @@ class WelcomeViewController: UIViewController, ARDataSource{
             if let coupons_adapter_url = configuration?.getProperty("coupons_adapter_url"), let discountPickableRadius = configuration?.getProperty("discountPickableRadius"), let giftPickableRadius = configuration?.getProperty("giftPickableRadius") {
                 self.discountPickableRadius = Int(discountPickableRadius)
                 self.giftPickableRadius = Int(giftPickableRadius)
-                self.fetchCoupons(coupons_adapter_url)
+                self.ferchCoupons(coupons_adapter_url)
                 
                 let segment = coupons_adapter_url.componentsSeparatedByString("/").last
                 WLAnalytics.sharedInstance().log("load-coupons-pressed", withMetadata: ["load-coupons-pressed" : segment!]);
