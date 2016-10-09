@@ -442,7 +442,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.CouponsApp;
 				PRODUCT_NAME = CouponsApp;
 				SWIFT_VERSION = 2.3;
 			};
@@ -456,7 +456,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.MyCoupons;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mfpdev.sample.CouponsApp;
 				PRODUCT_NAME = CouponsApp;
 				SWIFT_VERSION = 2.3;
 			};
