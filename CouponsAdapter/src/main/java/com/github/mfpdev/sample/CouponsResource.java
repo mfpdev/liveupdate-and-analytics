@@ -49,7 +49,7 @@ public class CouponsResource {
     private static final String PREMIUM = "premium";
     private static final String VIP = "vip";
 
-    private final static String BASE_URL = "https://raw.githubusercontent.com/mfpdev/images/master/";
+    private final static String BASE_URL = "https://raw.githubusercontent.com/mfpdev/liveupdate-and-analytics/master/images/";
 
     @Context
     ConfigurationAPI configurationAPI;
