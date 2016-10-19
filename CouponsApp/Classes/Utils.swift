@@ -26,7 +26,8 @@ import UIKit
 
 class Utils {
     internal static func getUIImage (urlString: String)->UIImage? {
-        let url = NSURL(string: urlString)
+        let encodedUrlString = urlString.stringByAddingPercentEncodingWithAllowedCharacters( NSCharacterSet.URLQueryAllowedCharacterSet())
+        let url = NSURL(string: encodedUrlString!)
         let imagedData = NSData(contentsOfURL: url!)!
         return UIImage(data: imagedData, scale: 10)
     }
