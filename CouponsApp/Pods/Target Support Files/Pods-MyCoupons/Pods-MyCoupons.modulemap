@@ -1,6 +1,0 @@
-framework module Pods_MyCoupons {
-  umbrella header "Pods-MyCoupons-umbrella.h"
-
-  export *
-  module * { export * }
-}

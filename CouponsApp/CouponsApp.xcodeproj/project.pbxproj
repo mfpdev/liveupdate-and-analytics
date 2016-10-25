@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A3A77A1C84732FAFE7D5889F /* Pods_MyCoupons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */; };
+		31F1BACA574C8F70BA247833 /* Pods_CouponsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF2180C5BBBCBE2D83020E3 /* Pods_CouponsApp.framework */; };
 		D40190D31D659EFF00956BCD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40190D11D659EFF00956BCD /* CoreAudio.framework */; };
 		D40190D41D659EFF00956BCD /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40190D21D659EFF00956BCD /* CoreAudioKit.framework */; };
 		D408126E1D6063B900CC0D11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D408126D1D6063B900CC0D11 /* MapKit.framework */; };
@@ -41,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B4DA529453655D57607F73E /* Pods-CouponsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouponsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CouponsApp/Pods-CouponsApp.release.xcconfig"; sourceTree = "<group>"; };
 		367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCoupons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40190D11D659EFF00956BCD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		D40190D21D659EFF00956BCD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +50,7 @@
 		D408126F1D6063DA00CC0D11 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D40812711D6063F100CC0D11 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		D4534FD31D61A5B9003153A7 /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
+		D4B226571DBFEE1C00FCD77C /* CouponsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CouponsApp.entitlements; sourceTree = "<group>"; };
 		D4E01C121D7826FC0084C979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4E01C141D7826FC0084C979 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E01C151D7826FC0084C979 /* CouponAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponAnnotationView.swift; sourceTree = "<group>"; };
@@ -73,8 +75,10 @@
 		D4E01C3E1D7827390084C979 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4E01C421D7828580084C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4E01C441D7828580084C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		D7C50E4B67B5A000E1CD4E37 /* Pods-CouponsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CouponsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CouponsApp/Pods-CouponsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.release.xcconfig"; sourceTree = "<group>"; };
 		F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCoupons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons.debug.xcconfig"; sourceTree = "<group>"; };
+		FAF2180C5BBBCBE2D83020E3 /* Pods_CouponsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CouponsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,7 @@
 				D40812721D6063F100CC0D11 /* CoreMotion.framework in Frameworks */,
 				D40812701D6063DA00CC0D11 /* CoreLocation.framework in Frameworks */,
 				D408126E1D6063B900CC0D11 /* MapKit.framework in Frameworks */,
-				A3A77A1C84732FAFE7D5889F /* Pods_MyCoupons.framework in Frameworks */,
+				31F1BACA574C8F70BA247833 /* Pods_CouponsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,8 @@
 			children = (
 				F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */,
 				EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */,
+				D7C50E4B67B5A000E1CD4E37 /* Pods-CouponsApp.debug.xcconfig */,
+				1B4DA529453655D57607F73E /* Pods-CouponsApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -112,6 +118,7 @@
 				D408126F1D6063DA00CC0D11 /* CoreLocation.framework */,
 				D408126D1D6063B900CC0D11 /* MapKit.framework */,
 				367AA019D25B2D96A895CC79 /* Pods_MyCoupons.framework */,
+				FAF2180C5BBBCBE2D83020E3 /* Pods_CouponsApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 		D408124D1D60599500CC0D11 = {
 			isa = PBXGroup;
 			children = (
+				D4B226571DBFEE1C00FCD77C /* CouponsApp.entitlements */,
 				D4E01C3E1D7827390084C979 /* Info.plist */,
 				D4E01C131D7826FC0084C979 /* Classes */,
 				D4E01C1B1D7826FC0084C979 /* Images */,
@@ -211,6 +219,9 @@
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
@@ -277,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CouponsApp/Pods-CouponsApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1DF36A343DBD98C10C5C6B41 /* [CP] Copy Pods Resources */ = {
@@ -292,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCoupons/Pods-MyCoupons-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CouponsApp/Pods-CouponsApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		990B06DC15918BD31A907F24 /* [CP] Check Pods Manifest.lock */ = {
@@ -436,9 +447,11 @@
 		};
 		D40812691D60599500CC0D11 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F15237D9AB01C1539D277E39 /* Pods-MyCoupons.debug.xcconfig */;
+			baseConfigurationReference = D7C50E4B67B5A000E1CD4E37 /* Pods-CouponsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CouponsApp.entitlements;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -450,9 +463,11 @@
 		};
 		D408126A1D60599500CC0D11 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC8C30EF27078B377D2353E3 /* Pods-MyCoupons.release.xcconfig */;
+			baseConfigurationReference = 1B4DA529453655D57607F73E /* Pods-CouponsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CouponsApp.entitlements;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
