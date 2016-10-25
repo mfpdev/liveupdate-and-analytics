@@ -2,6 +2,8 @@
 
 The purpose of this sample is to show you how to gradually rollout a new feature, and measure its success, using MobileFirst Foundation capabilities. It also shows you how you can fine-tune aspects of the new feature in response to user feedback, without releasing a new version of your app. The new feature introduced in this sample app allows users to collect [Augmented Reality](https://www.wikiwand.com/en/Augmented_reality) coupons, using the phone camera to scan for coupons “in the field.” Similar to collecting Pokemon in the recent popular game [Pokemon Go](http://www.pokemongo.com/).
 
+For more info see the following [blog](https://mobilefirstplatform.ibmcloud.com/blog/2016/09/11/liveupdate-and-analytics/)
+
  The MobileFirst Foundation features highlighted in this sample are [Live Update](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/live-update/), [Analytics](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/analytics/), [Adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/) and [Security Framework](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/).
 
 ### Demo
